@@ -2,14 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Canvas Boilerplate | Chris Courses</title>
-    <style>
-      body {
-        margin: 0;
-      }
-    </style>
+    <title>Snapshot adventurer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico"></head>
   <body>
-    <canvas></canvas>
+  <div id="start-page" class="start-page">
+    <h1 class="title">Trusty Snapshot</h1>
+    <button id="start-btn" class="btn">START</button>
+  </div>
+  <div id="page-1" class="page">
+    <p> You heard about this thing called CAI and want to use it , let us walk you through it!</p>
+    <button id="page1-btn" class="btn1">Next</button>
+  </div>
+  <div id="page-2" class="page">
+    <p>Content Credentials are already integrated into the tools creators use every day for their work such as Adobe Stock, Behance, Photoshop, Lightroom and others</p> <br>     <p> Including Content Credentials gives viewers pertinent info about your images, so they are confident in what they're seeing</p>
+    <button id="page2-btn" class="btn1">Next</button>
+  </div>
+  <div id="page-3" class="page">
+    <p>See how easy it is to be transparent about your content and build trust with your audience! </p> <br>     <p> To play the game, use the arrow keys to help Creddy add Content Credentials to their creation.</p>
+   <div class="img-next"> <button id="page3-btn" class="btn1">Next</button> <img id="img"></img></div>
+  </div>
+  <div id="container">  <canvas  id="canvas" height="576" width="1024"></canvas></div>
+  
   <script src="./js/canvas.bundle.js"></script></body>
 </html>
