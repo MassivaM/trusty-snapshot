@@ -86,16 +86,42 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/background4.png":
-/*!********************************!*\
-  !*** ./assets/background4.png ***!
-  \********************************/
+/***/ "./assets/buildings.png":
+/*!******************************!*\
+  !*** ./assets/buildings.png ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "52f4b0a8e5e85a11c3f826752caf5076.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "871a84146834c3ad438e9d9a9d37f0e1.png");
+
+/***/ }),
+
+/***/ "./assets/contact.png":
+/*!****************************!*\
+  !*** ./assets/contact.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "717e40c40d4001427da5f6126e5846ea.png");
+
+/***/ }),
+
+/***/ "./assets/cr.png":
+/*!***********************!*\
+  !*** ./assets/cr.png ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e8d2c8f9c97741ef7be390b1586cf80f.png");
 
 /***/ }),
 
@@ -125,16 +151,81 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./assets/platform-small-tall.png":
-/*!****************************************!*\
-  !*** ./assets/platform-small-tall.png ***!
-  \****************************************/
+/***/ "./assets/hi-contact.png":
+/*!*******************************!*\
+  !*** ./assets/hi-contact.png ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "19b6a6154a97b145d9b9f07095811ce3.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "0642c3a5c4ddf1b985d237984e9b1efd.png");
+
+/***/ }),
+
+/***/ "./assets/hi-palette.png":
+/*!*******************************!*\
+  !*** ./assets/hi-palette.png ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "81966746656d967abdb8f367d5bc5bf8.png");
+
+/***/ }),
+
+/***/ "./assets/hi-phone.png":
+/*!*****************************!*\
+  !*** ./assets/hi-phone.png ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "de57dbc0608cdc4b65165a00ab2a3c55.png");
+
+/***/ }),
+
+/***/ "./assets/hi-wand.png":
+/*!****************************!*\
+  !*** ./assets/hi-wand.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "ea4a8ddfb995f44131dd9df498fbda73.png");
+
+/***/ }),
+
+/***/ "./assets/palette.png":
+/*!****************************!*\
+  !*** ./assets/palette.png ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "bbf540491412ea1fb7f6ccef9976a2de.png");
+
+/***/ }),
+
+/***/ "./assets/phone.png":
+/*!**************************!*\
+  !*** ./assets/phone.png ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "451c9a27873238400b73de86ac3a72bb.png");
 
 /***/ }),
 
@@ -151,16 +242,55 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./assets/trees.png":
-/*!**************************!*\
-  !*** ./assets/trees.png ***!
-  \**************************/
+/***/ "./assets/sky.png":
+/*!************************!*\
+  !*** ./assets/sky.png ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "5477f09804520bcae6a7419bbcdae6aa.png");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "5154836d14c31577ee653a70857f2a28.png");
+
+/***/ }),
+
+/***/ "./assets/smallTall.png":
+/*!******************************!*\
+  !*** ./assets/smallTall.png ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "df454fc72641e5e1b0906b68ea550dc8.png");
+
+/***/ }),
+
+/***/ "./assets/trees2.png":
+/*!***************************!*\
+  !*** ./assets/trees2.png ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e24a5977798c2b5bfc1448dcfa3d3a08.png");
+
+/***/ }),
+
+/***/ "./assets/wand.png":
+/*!*************************!*\
+  !*** ./assets/wand.png ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "42574dade7d5ca800ddc15ed37bc7674.png");
 
 /***/ }),
 
@@ -182,7 +312,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\nbody {\n  margin: 0;\n  background-color:white;\n  display:flex; \n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n\n  \n}\n#canvas {\n    background: black;\n    position: relative;\n    z-index: 1;\n    display:none\n  }\n\n  .title{\n    color:#282828;\n    font-family: 'Plus Jakarta Sans', sans-serif;\n    font-size: 5rem;\n    font-weight: 800;\n\n  }\n .start-page{\n    background-color:white;\n    border: 2px solid #282828;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    z-index: 10;\n    width: 1024px;\n    flex-direction: column;\n    height: 576px;\n    border-radius: 6px ;\n  }\n.btn{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n}\n\n.page{\n  display: none;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  display: none; \n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid #282828;\n  font-size: 1rem;\n  width: 1024px;\n  border-radius: 6px ;\n  font-weight: 600;\n  height: 576px;\n\n}\n\n.btn1{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  margin-top: 3rem;\n}\n\np{\n  padding-left: 10rem;\n  padding-right: 10rem;\n}\n\n.img-next{\n  display: flex;\n\n}\n\n#img{\n  padding-left: 10rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":";AACA;EACE,SAAS;EACT,sBAAsB;EACtB,YAAY;EACZ,mBAAmB;EACnB,uBAAuB;EACvB,aAAa;;;AAGf;AACA;IACI,iBAAiB;IACjB,kBAAkB;IAClB,UAAU;IACV;EACF;;EAEA;IACE,aAAa;IACb,4CAA4C;IAC5C,eAAe;IACf,gBAAgB;;EAElB;CACD;IACG,sBAAsB;IACtB,yBAAyB;IACzB,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;IACX,aAAa;IACb,sBAAsB;IACtB,aAAa;IACb,mBAAmB;EACrB;AACF;EACE,WAAW;EACX,YAAY;EACZ,yBAAyB;EACzB,uBAAuB;EACvB,mBAAmB;EACnB,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,4CAA4C;EAC5C,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,yBAAyB;EACzB,eAAe;EACf,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,aAAa;;AAEf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,yBAAyB;EACzB,uBAAuB;EACvB,mBAAmB;EACnB,4CAA4C;EAC5C,gBAAgB;AAClB;;AAEA;EACE,mBAAmB;EACnB,oBAAoB;AACtB;;AAEA;EACE,aAAa;;AAEf;;AAEA;EACE,mBAAmB;AACrB","sourcesContent":["\nbody {\n  margin: 0;\n  background-color:white;\n  display:flex; \n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n\n  \n}\n#canvas {\n    background: black;\n    position: relative;\n    z-index: 1;\n    display:none\n  }\n\n  .title{\n    color:#282828;\n    font-family: 'Plus Jakarta Sans', sans-serif;\n    font-size: 5rem;\n    font-weight: 800;\n\n  }\n .start-page{\n    background-color:white;\n    border: 2px solid #282828;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    z-index: 10;\n    width: 1024px;\n    flex-direction: column;\n    height: 576px;\n    border-radius: 6px ;\n  }\n.btn{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n}\n\n.page{\n  display: none;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  display: none; \n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid #282828;\n  font-size: 1rem;\n  width: 1024px;\n  border-radius: 6px ;\n  font-weight: 600;\n  height: 576px;\n\n}\n\n.btn1{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  margin-top: 3rem;\n}\n\np{\n  padding-left: 10rem;\n  padding-right: 10rem;\n}\n\n.img-next{\n  display: flex;\n\n}\n\n#img{\n  padding-left: 10rem;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "\nbody {\n  margin: 0;\n  background-color:white;\n  display:flex; \n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  width: 100vw;\n\n  \n}\n#canvas {\n\n    /* position: relative; */\n    /* z-index: 1; */\n\n  }\n\n  .title{\n    color:#282828;\n    font-family: 'Plus Jakarta Sans', sans-serif;\n    font-size: 5rem;\n    font-weight: 800;\n\n  }\n .start-page{\n    background-color:white;\n    border: 2px solid #282828;\n    display:none;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    z-index: 10;\n    width: 1024px;\n    flex-direction: column;\n    height: 576px;\n    border-radius: 6px ;\n  }\n.btn{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n}\n\n.page{\n  display: none;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  display: none; \n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid #282828;\n  font-size: 1rem;\n  width: 1024px;\n  border-radius: 6px ;\n  font-weight: 600;\n  height: 576px;\n\n}\n\n.btn1{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  margin-top: 3rem;\n}\n\np{\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  padding-left: 10rem;\n  padding-right: 10rem;\n}\n\n.img-next{\n  display: flex;\n\n}\n\n#img{\n  padding-left: 10rem;\n}\n#container {\n  position: relative;\n  height:576px;\n  width:1024px;\n  display: block\n}\n#container canvas, #overlay {\n  position: absolute;\n  height:576px;\n   width:1024px;\n   z-index:9999;\n   background-color: rgba(40, 40, 40, 0.50);\n\n}\n\n.small-overlay{\nheight: 288px;\nwidth: 512px;\nborder: 4px solid #282828;\nborder-radius: 10px;\nbackground-color: white;\nalign-items: center;\n\ndisplay:flex;\nflex-direction: column;\n\n}\n\n.small-overlay p{\n  padding-right: 4rem;\n  padding-left: 4rem;\n}\n\n.small-overlay input{\n  margin-right: 4rem;\n  margin-left: 4rem;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  border-bottom: 4px solid #282828;\n  text-align: center; \n\n}\n\n.small-overlay button{\nmargin-top: 2rem;\nheight: 2rem;\n}\n\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n    outline: none;\n    border-bottom: 4px solid #85A0FA;\n}\n\n.username-div{\n  width: fit-content;\n  display: flex;\n  height: 30px;\n  background-color: white;\n  border: 4px solid #282828;\n  border-radius:10px;\n  align-items: center;\n\n}\n\n#cr-logo{\n  width: 20px;\n  height: 20px;\n  padding-left: 0.5rem;\n\n}\n\n.username{\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n\n}\n\n.center{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height:576px;\n  width:1024px;\n  \n}\n\n.right{\n  display: flex;\n  justify-content: flex-end;\n  padding: 1rem;\n  display: none;\n}\n\n.bottom{\n  display: none;\n  height:495px;\n  width:1024px;\n  align-items: flex-end;\n  justify-content: center;\n  margin-bottom: 2rem;\n}\n.caption{\n  font-family: 'Source Code Pro', monospace;\n  font-weight: 600;\n  font-size: 0.75rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":";AACA;EACE,SAAS;EACT,sBAAsB;EACtB,YAAY;EACZ,mBAAmB;EACnB,uBAAuB;EACvB,aAAa;EACb,YAAY;;;AAGd;AACA;;IAEI,wBAAwB;IACxB,gBAAgB;;EAElB;;EAEA;IACE,aAAa;IACb,4CAA4C;IAC5C,eAAe;IACf,gBAAgB;;EAElB;CACD;IACG,sBAAsB;IACtB,yBAAyB;IACzB,YAAY;IACZ,uBAAuB;IACvB,mBAAmB;IACnB,kBAAkB;IAClB,WAAW;IACX,aAAa;IACb,sBAAsB;IACtB,aAAa;IACb,mBAAmB;EACrB;AACF;EACE,WAAW;EACX,YAAY;EACZ,yBAAyB;EACzB,uBAAuB;EACvB,mBAAmB;EACnB,4CAA4C;AAC9C;;AAEA;EACE,aAAa;EACb,4CAA4C;EAC5C,aAAa;EACb,sBAAsB;EACtB,uBAAuB;EACvB,mBAAmB;EACnB,yBAAyB;EACzB,eAAe;EACf,aAAa;EACb,mBAAmB;EACnB,gBAAgB;EAChB,aAAa;;AAEf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,yBAAyB;EACzB,uBAAuB;EACvB,mBAAmB;EACnB,4CAA4C;EAC5C,gBAAgB;AAClB;;AAEA;EACE,4CAA4C;EAC5C,mBAAmB;EACnB,oBAAoB;AACtB;;AAEA;EACE,aAAa;;AAEf;;AAEA;EACE,mBAAmB;AACrB;AACA;EACE,kBAAkB;EAClB,YAAY;EACZ,YAAY;EACZ;AACF;AACA;EACE,kBAAkB;EAClB,YAAY;GACX,YAAY;GACZ,YAAY;GACZ,wCAAwC;;AAE3C;;AAEA;AACA,aAAa;AACb,YAAY;AACZ,yBAAyB;AACzB,mBAAmB;AACnB,uBAAuB;AACvB,mBAAmB;;AAEnB,YAAY;AACZ,sBAAsB;;AAEtB;;AAEA;EACE,mBAAmB;EACnB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,4CAA4C;EAC5C,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;EAClB,gCAAgC;EAChC,kBAAkB;;AAEpB;;AAEA;AACA,gBAAgB;AAChB,YAAY;AACZ;;AAEA;;;;IAII,aAAa;IACb,gCAAgC;AACpC;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,YAAY;EACZ,uBAAuB;EACvB,yBAAyB;EACzB,kBAAkB;EAClB,mBAAmB;;AAErB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,oBAAoB;;AAEtB;;AAEA;EACE,4CAA4C;EAC5C,oBAAoB;EACpB,qBAAqB;;AAEvB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,YAAY;EACZ,YAAY;;AAEd;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,aAAa;EACb,aAAa;AACf;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,YAAY;EACZ,qBAAqB;EACrB,uBAAuB;EACvB,mBAAmB;AACrB;AACA;EACE,yCAAyC;EACzC,gBAAgB;EAChB,kBAAkB;EAClB,oBAAoB;EACpB,qBAAqB;AACvB","sourcesContent":["\nbody {\n  margin: 0;\n  background-color:white;\n  display:flex; \n  align-items: center;\n  justify-content: center;\n  height: 100vh;\n  width: 100vw;\n\n  \n}\n#canvas {\n\n    /* position: relative; */\n    /* z-index: 1; */\n\n  }\n\n  .title{\n    color:#282828;\n    font-family: 'Plus Jakarta Sans', sans-serif;\n    font-size: 5rem;\n    font-weight: 800;\n\n  }\n .start-page{\n    background-color:white;\n    border: 2px solid #282828;\n    display:none;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n    z-index: 10;\n    width: 1024px;\n    flex-direction: column;\n    height: 576px;\n    border-radius: 6px ;\n  }\n.btn{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n}\n\n.page{\n  display: none;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  display: none; \n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  border: 2px solid #282828;\n  font-size: 1rem;\n  width: 1024px;\n  border-radius: 6px ;\n  font-weight: 600;\n  height: 576px;\n\n}\n\n.btn1{\n  width: 5rem;\n  height: 3rem;\n  border: 2px solid #282828;\n  background-color: white;\n  border-radius: 6px ;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  margin-top: 3rem;\n}\n\np{\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  padding-left: 10rem;\n  padding-right: 10rem;\n}\n\n.img-next{\n  display: flex;\n\n}\n\n#img{\n  padding-left: 10rem;\n}\n#container {\n  position: relative;\n  height:576px;\n  width:1024px;\n  display: block\n}\n#container canvas, #overlay {\n  position: absolute;\n  height:576px;\n   width:1024px;\n   z-index:9999;\n   background-color: rgba(40, 40, 40, 0.50);\n\n}\n\n.small-overlay{\nheight: 288px;\nwidth: 512px;\nborder: 4px solid #282828;\nborder-radius: 10px;\nbackground-color: white;\nalign-items: center;\n\ndisplay:flex;\nflex-direction: column;\n\n}\n\n.small-overlay p{\n  padding-right: 4rem;\n  padding-left: 4rem;\n}\n\n.small-overlay input{\n  margin-right: 4rem;\n  margin-left: 4rem;\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  border-bottom: 4px solid #282828;\n  text-align: center; \n\n}\n\n.small-overlay button{\nmargin-top: 2rem;\nheight: 2rem;\n}\n\ninput:focus,\nselect:focus,\ntextarea:focus,\nbutton:focus {\n    outline: none;\n    border-bottom: 4px solid #85A0FA;\n}\n\n.username-div{\n  width: fit-content;\n  display: flex;\n  height: 30px;\n  background-color: white;\n  border: 4px solid #282828;\n  border-radius:10px;\n  align-items: center;\n\n}\n\n#cr-logo{\n  width: 20px;\n  height: 20px;\n  padding-left: 0.5rem;\n\n}\n\n.username{\n  font-family: 'Plus Jakarta Sans', sans-serif;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n\n}\n\n.center{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height:576px;\n  width:1024px;\n  \n}\n\n.right{\n  display: flex;\n  justify-content: flex-end;\n  padding: 1rem;\n  display: none;\n}\n\n.bottom{\n  display: none;\n  height:495px;\n  width:1024px;\n  align-items: flex-end;\n  justify-content: center;\n  margin-bottom: 2rem;\n}\n.caption{\n  font-family: 'Source Code Pro', monospace;\n  font-weight: 600;\n  font-size: 0.75rem;\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -602,13 +732,22 @@ module.exports = function (list, options) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_background4_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/background4.png */ "./assets/background4.png");
-/* harmony import */ var _assets_creddy_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/creddy.png */ "./assets/creddy.png");
-/* harmony import */ var _assets_platform_small_tall_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/platform-small-tall.png */ "./assets/platform-small-tall.png");
-/* harmony import */ var _assets_platform6_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/platform6.png */ "./assets/platform6.png");
-/* harmony import */ var _assets_trees_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/trees.png */ "./assets/trees.png");
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles.css */ "./src/styles.css");
-/* harmony import */ var _intro_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./intro.js */ "./src/js/intro.js");
+/* harmony import */ var _assets_buildings_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/buildings.png */ "./assets/buildings.png");
+/* harmony import */ var _assets_contact_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/contact.png */ "./assets/contact.png");
+/* harmony import */ var _assets_creddy_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/creddy.png */ "./assets/creddy.png");
+/* harmony import */ var _assets_hi_contact_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/hi-contact.png */ "./assets/hi-contact.png");
+/* harmony import */ var _assets_hi_palette_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/hi-palette.png */ "./assets/hi-palette.png");
+/* harmony import */ var _assets_hi_phone_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/hi-phone.png */ "./assets/hi-phone.png");
+/* harmony import */ var _assets_hi_wand_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/hi-wand.png */ "./assets/hi-wand.png");
+/* harmony import */ var _assets_palette_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../assets/palette.png */ "./assets/palette.png");
+/* harmony import */ var _assets_phone_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../assets/phone.png */ "./assets/phone.png");
+/* harmony import */ var _assets_platform6_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../assets/platform6.png */ "./assets/platform6.png");
+/* harmony import */ var _assets_sky_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../assets/sky.png */ "./assets/sky.png");
+/* harmony import */ var _assets_smallTall_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../assets/smallTall.png */ "./assets/smallTall.png");
+/* harmony import */ var _assets_trees2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../assets/trees2.png */ "./assets/trees2.png");
+/* harmony import */ var _assets_wand_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../assets/wand.png */ "./assets/wand.png");
+/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../styles.css */ "./src/styles.css");
+/* harmony import */ var _intro_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./intro.js */ "./src/js/intro.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -622,8 +761,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
+
+
+
+
+
+
+
+
+
 var canvas = document.querySelector("canvas");
 var c = canvas.getContext("2d");
+var pause = true;
+var phoneSelected = false;
+var wandSelected = false;
+var contactSelected = false;
+var paletteSelected = false;
 c.imageSmoothingEnabled = false;
 var gravity = 1.5;
 
@@ -642,7 +795,7 @@ var Player = /*#__PURE__*/function () {
     this.speed = 5;
     this.width = 63;
     this.height = 66;
-    this.image = createImage(_assets_creddy_png__WEBPACK_IMPORTED_MODULE_1__["default"]);
+    this.image = createImage(_assets_creddy_png__WEBPACK_IMPORTED_MODULE_2__["default"]);
   }
 
   _createClass(Player, [{
@@ -720,6 +873,37 @@ var GenericObject = /*#__PURE__*/function () {
   return GenericObject;
 }();
 
+var ClickableObject = /*#__PURE__*/function () {
+  function ClickableObject(_ref3) {
+    var x = _ref3.x,
+        y = _ref3.y,
+        image = _ref3.image,
+        hiImage = _ref3.hiImage,
+        original = _ref3.original;
+
+    _classCallCheck(this, ClickableObject);
+
+    this.position = {
+      x: x,
+      y: y
+    };
+    this.image = image;
+    this.hiImage = hiImage;
+    this.original = original;
+    this.width = image.width;
+    this.height = image.height;
+  }
+
+  _createClass(ClickableObject, [{
+    key: "draw",
+    value: function draw() {
+      c.drawImage(this.image, this.position.x, this.position.y);
+    }
+  }]);
+
+  return ClickableObject;
+}();
+
 function createImage(imageSrc) {
   var image = new Image();
   image.src = imageSrc;
@@ -728,9 +912,13 @@ function createImage(imageSrc) {
   return image;
 }
 
-var platformImage = createImage(_assets_platform6_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var platformImage = createImage(_assets_platform6_png__WEBPACK_IMPORTED_MODULE_9__["default"]);
 var player = new Player();
 var platforms = [];
+var clickableObjects1 = [];
+var clickableObjects2 = [];
+var clickableObjects3 = [];
+var clickableObjects4 = [];
 var genericObjects = [];
 var keys = {
   right: {
@@ -738,54 +926,96 @@ var keys = {
   },
   left: {
     pressed: false
+  },
+  enter: {
+    pressed: false
   }
 };
 var scrollOffset = 0;
 
 function init() {
-  platformImage = createImage(_assets_platform6_png__WEBPACK_IMPORTED_MODULE_3__["default"]);
+  platformImage = createImage(_assets_platform6_png__WEBPACK_IMPORTED_MODULE_9__["default"]);
   player = new Player();
   platforms = [new Platform({
-    x: platformImage.width * 4 + 585,
-    y: 275,
-    image: createImage(_assets_platform_small_tall_png__WEBPACK_IMPORTED_MODULE_2__["default"])
+    x: platformImage.width * 4 + 573,
+    y: 295,
+    image: createImage(_assets_smallTall_png__WEBPACK_IMPORTED_MODULE_11__["default"])
   }), new Platform({
     x: -12,
     y: 510,
     image: platformImage
   }), new Platform({
-    x: 550,
+    x: 662,
     y: 510,
     image: platformImage
   }), new Platform({
     x: platformImage.width * 2 + 100,
-    y: 492,
+    y: 510,
     image: platformImage
   }), new Platform({
-    x: platformImage.width * 3 + 300,
-    y: 492,
+    x: platformImage.width * 3 + 200,
+    y: 510,
     image: platformImage
   }), new Platform({
     x: platformImage.width * 4 + 299,
-    y: 492,
+    y: 510,
     image: platformImage
   }), new Platform({
-    x: platformImage.width * 5 + 620,
-    y: 492,
+    x: platformImage.width * 5 + 450,
+    y: 510,
+    image: platformImage
+  }), new Platform({
+    x: platformImage.width * 6 + 400,
+    y: 510,
     image: platformImage
   })];
-  genericObjects = [// new GenericObject({ x: 0, y: 0, image: createImage(background) }),
-  new GenericObject({
+  genericObjects = [new GenericObject({
+    x: -10,
+    y: -150,
+    image: createImage(_assets_sky_png__WEBPACK_IMPORTED_MODULE_10__["default"])
+  }), new GenericObject({
     x: 0,
-    y: 240,
-    image: createImage(_assets_trees_png__WEBPACK_IMPORTED_MODULE_4__["default"])
+    y: -30,
+    image: createImage(_assets_buildings_png__WEBPACK_IMPORTED_MODULE_0__["default"])
+  }), new GenericObject({
+    x: 0,
+    y: 200,
+    image: createImage(_assets_trees2_png__WEBPACK_IMPORTED_MODULE_12__["default"])
+  })];
+  clickableObjects1 = [new ClickableObject({
+    x: 800,
+    y: 430,
+    image: createImage(_assets_phone_png__WEBPACK_IMPORTED_MODULE_8__["default"]),
+    hiImage: createImage(_assets_hi_phone_png__WEBPACK_IMPORTED_MODULE_5__["default"]),
+    original: createImage(_assets_phone_png__WEBPACK_IMPORTED_MODULE_8__["default"])
+  })];
+  clickableObjects2 = [new ClickableObject({
+    x: 1400,
+    y: 430,
+    image: createImage(_assets_wand_png__WEBPACK_IMPORTED_MODULE_13__["default"]),
+    hiImage: createImage(_assets_hi_wand_png__WEBPACK_IMPORTED_MODULE_6__["default"]),
+    original: createImage(_assets_wand_png__WEBPACK_IMPORTED_MODULE_13__["default"])
+  })];
+  clickableObjects3 = [new ClickableObject({
+    x: 2300,
+    y: 430,
+    image: createImage(_assets_contact_png__WEBPACK_IMPORTED_MODULE_1__["default"]),
+    hiImage: createImage(_assets_hi_contact_png__WEBPACK_IMPORTED_MODULE_3__["default"]),
+    original: createImage(_assets_contact_png__WEBPACK_IMPORTED_MODULE_1__["default"])
+  })];
+  clickableObjects4 = [new ClickableObject({
+    x: 3400,
+    y: 430,
+    image: createImage(_assets_palette_png__WEBPACK_IMPORTED_MODULE_7__["default"]),
+    hiImage: createImage(_assets_hi_palette_png__WEBPACK_IMPORTED_MODULE_4__["default"]),
+    original: createImage(_assets_palette_png__WEBPACK_IMPORTED_MODULE_7__["default"])
   })];
   scrollOffset = 0;
 }
 
 function animate() {
   requestAnimationFrame(animate);
-  c.fillStyle = "#fbf9f4";
+  c.fillStyle = "#FFFAF0";
   c.fillRect(0, 0, canvas.width, canvas.height);
   genericObjects.forEach(function (genericObjects) {
     genericObjects.draw();
@@ -793,56 +1023,163 @@ function animate() {
   platforms.forEach(function (platform) {
     platform.draw();
   });
-  player.update();
+  clickableObjects1.forEach(function (clickableObject) {
+    clickableObject.draw();
+  });
+  clickableObjects2.forEach(function (clickableObject) {
+    clickableObject.draw();
+  });
+  clickableObjects3.forEach(function (clickableObject) {
+    clickableObject.draw();
+  });
+  clickableObjects4.forEach(function (clickableObject) {
+    clickableObject.draw();
+  });
 
-  if (keys.right.pressed && player.position.x < 400) {
-    player.velocity.x = player.speed;
-  } else if (keys.left.pressed && player.position.x > 100 || keys.left.pressed && scrollOffset === 0 && player.position.x > 0) {
-    player.velocity.x = -player.speed;
-  } else {
-    player.velocity.x = 0;
+  if (!pause) {
+    player.update();
 
-    if (keys.right.pressed) {
-      scrollOffset += player.speed;
-      platforms.forEach(function (platform) {
-        platform.position.x -= player.speed;
-      });
-      genericObjects.forEach(function (genericObject) {
-        genericObject.position.x -= player.speed * 0.66;
-      });
-    } else if (keys.left.pressed && scrollOffset > 0) {
-      scrollOffset -= player.speed;
-      platforms.forEach(function (platform) {
-        platform.position.x += player.speed;
-      });
-      genericObjects.forEach(function (genericObject) {
-        genericObject.position.x += player.speed;
-      });
+    if (keys.right.pressed && player.position.x < 400) {
+      player.velocity.x = player.speed;
+    } else if (keys.left.pressed && player.position.x > 100 || keys.left.pressed && scrollOffset === 0 && player.position.x > 0) {
+      player.velocity.x = -player.speed;
+    } else {
+      player.velocity.x = 0;
+
+      if (keys.right.pressed) {
+        scrollOffset += player.speed;
+        platforms.forEach(function (platform) {
+          platform.position.x -= player.speed;
+        });
+        clickableObjects1.forEach(function (clickableObject) {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects2.forEach(function (clickableObject) {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects3.forEach(function (clickableObject) {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects4.forEach(function (clickableObject) {
+          clickableObject.position.x -= player.speed;
+        });
+        genericObjects.forEach(function (genericObject) {
+          genericObject.position.x -= player.speed * 0.66;
+        });
+      } else if (keys.left.pressed && scrollOffset > 0) {
+        scrollOffset -= player.speed;
+        platforms.forEach(function (platform) {
+          platform.position.x += player.speed;
+        });
+        clickableObjects1.forEach(function (clickableObject) {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects2.forEach(function (clickableObject) {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects3.forEach(function (clickableObject) {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects4.forEach(function (clickableObject) {
+          clickableObject.position.x += player.speed;
+        });
+        genericObjects.forEach(function (genericObject) {
+          genericObject.position.x += player.speed;
+        });
+      }
     }
-  }
 
-  platforms.forEach(function (platform) {
-    if (player.position.y + player.height <= platform.position.y && player.position.y + player.height + player.velocity.y >= platform.position.y && player.position.x + player.width >= platform.position.x && player.position.x + player.width <= platform.position.x + platform.width) {
-      player.velocity.y = 0;
+    platforms.forEach(function (platform) {
+      if (player.position.y + player.height <= platform.position.y && player.position.y + player.height + player.velocity.y >= platform.position.y && player.position.x + player.width >= platform.position.x && player.position.x + player.width <= platform.position.x + platform.width) {
+        player.velocity.y = 0;
+      }
+    });
+    clickableObjects1.forEach(function (clickableObject, index) {
+      if (player.position.x >= clickableObject.position.x - 100 && player.position.x <= clickableObject.position.x + clickableObject.width + 100) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+        document.getElementById("caption1").innerHTML = "Press Enter";
+        phoneSelected = true;
+      } else if (player.position.x > clickableObject.position.x + clickableObject.width + 100 || player.position.x < clickableObject.position.x - 100) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+
+        if (phoneSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects2.forEach(function (clickableObject, index) {
+      if (player.position.x >= clickableObject.position.x - 100 && player.position.x <= clickableObject.position.x + clickableObject.width + 100) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+        document.getElementById("caption1").innerHTML = "Press Enter";
+        wandSelected = true;
+      } else if (player.position.x > clickableObject.position.x + clickableObject.width + 100 || player.position.x < clickableObject.position.x - 100) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+
+        if (wandSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects3.forEach(function (clickableObject, index) {
+      if (player.position.x >= clickableObject.position.x - 100 && player.position.x <= clickableObject.position.x + clickableObject.width + 100) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+        document.getElementById("caption1").innerHTML = "Press Enter";
+        contactSelected = true;
+      } else if (player.position.x > clickableObject.position.x + clickableObject.width + 100 || player.position.x < clickableObject.position.x - 100) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+
+        if (contactSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects4.forEach(function (clickableObject, index) {
+      if (player.position.x >= clickableObject.position.x - 100 && player.position.x <= clickableObject.position.x + clickableObject.width + 100) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+        document.getElementById("caption1").innerHTML = "Press Enter";
+        paletteSelected = true;
+      } else if (player.position.x > clickableObject.position.x + clickableObject.width + 100 || player.position.x < clickableObject.position.x - 100) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+
+        if (paletteSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    }); //win condition
+
+    if (scrollOffset > 2000) {
+      console.log("you win");
+    } //lose condition
+
+
+    if (player.position.y > canvas.height) {
+      console.log("you lose");
+      init();
     }
-  }); //win condition
-
-  if (scrollOffset > 2000) {
-    console.log("you win");
-  } //lose condition
-
-
-  if (player.position.y > canvas.height) {
-    console.log("you lose");
-    init();
   }
 }
 
 init();
 animate(); //EVENT LISTENERS
 
-window.addEventListener("keydown", function (_ref3) {
-  var keyCode = _ref3.keyCode;
+window.addEventListener("keydown", function (_ref4) {
+  var keyCode = _ref4.keyCode;
 
   switch (keyCode) {
     case 37:
@@ -859,10 +1196,15 @@ window.addEventListener("keydown", function (_ref3) {
     case 38:
       player.velocity.y -= 25;
       break;
+
+    case 13:
+      keys.enter.pressed = true;
+      console.log("space");
+      break;
   }
 });
-window.addEventListener("keyup", function (_ref4) {
-  var keyCode = _ref4.keyCode;
+window.addEventListener("keyup", function (_ref5) {
+  var keyCode = _ref5.keyCode;
 
   switch (keyCode) {
     case 37:
@@ -878,8 +1220,31 @@ window.addEventListener("keyup", function (_ref4) {
 
     case 38:
       break;
+
+    case 13:
+      keys.enter.pressed = false;
+      break;
   }
-});
+}); //UI
+
+function getUserName() {
+  var nameField = document.getElementById("nameField").value;
+  var result = document.getElementById("username");
+
+  if (nameField.length > 0) {
+    result.textContent = nameField;
+    document.querySelector("#right").style.display = "flex";
+    document.querySelector("#bottom").style.display = "flex";
+    document.querySelector("#small-overlay").style.display = "none";
+    document.querySelector("#overlay").style.backgroundColor = "transparent";
+    pause = false;
+  } else {
+    document.getElementById("nameField").style.borderBottom = "4px solid #E66363";
+  }
+}
+
+var subButton = document.getElementById("cr-btn");
+subButton.addEventListener("click", getUserName, false);
 
 /***/ }),
 
@@ -892,7 +1257,9 @@ window.addEventListener("keyup", function (_ref4) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_creddy_controls_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/creddy+controls.png */ "./assets/creddy+controls.png");
+/* harmony import */ var _assets_cr_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../assets/cr.png */ "./assets/cr.png");
+/* harmony import */ var _assets_creddy_controls_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/creddy+controls.png */ "./assets/creddy+controls.png");
+
 
 document.querySelector("#start-btn").addEventListener("click", function () {
   document.querySelector("#page-1").style.display = "flex";
@@ -907,11 +1274,11 @@ document.querySelector("#page2-btn").addEventListener("click", function () {
   document.querySelector("#page-2").style.display = "none";
 });
 document.querySelector("#page3-btn").addEventListener("click", function () {
-  document.querySelector("#canvas").style.display = "block";
+  document.querySelector("#container").style.display = "block";
   document.querySelector("#page-3").style.display = "none";
 });
-document.querySelector("#img").src = _assets_creddy_controls_png__WEBPACK_IMPORTED_MODULE_0__["default"];
-document.querySelector("#img").style.wdith;
+document.querySelector("#img").src = _assets_creddy_controls_png__WEBPACK_IMPORTED_MODULE_1__["default"];
+document.querySelector("#cr-logo").src = _assets_cr_png__WEBPACK_IMPORTED_MODULE_0__["default"];
 
 /***/ }),
 

@@ -1,12 +1,26 @@
-import background from "../../assets/background4.png";
+import buildings from "../../assets/buildings.png";
+import contact from "../../assets/contact.png";
 import creddy from "../../assets/creddy.png";
-import SmallTallPlatform from "../../assets/platform-small-tall.png";
+import hiContact from "../../assets/hi-contact.png";
+import hiPalette from "../../assets/hi-palette.png";
+import hiPhone from "../../assets/hi-phone.png";
+import hiWand from "../../assets/hi-wand.png";
+import palette from "../../assets/palette.png";
+import phone from "../../assets/phone.png";
 import platform from "../../assets/platform6.png";
-import trees from "../../assets/trees.png";
+import sky from "../../assets/sky.png";
+import SmallTallPlatform from "../../assets/smallTall.png";
+import trees from "../../assets/trees2.png";
+import wand from "../../assets/wand.png";
 import "../styles.css";
 import intro from "./intro.js";
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
+let pause = true;
+let phoneSelected = false;
+let wandSelected = false;
+let contactSelected = false;
+let paletteSelected = false;
 c.imageSmoothingEnabled = false;
 
 const gravity = 1.5;
@@ -65,6 +79,22 @@ class GenericObject {
     c.drawImage(this.image, this.position.x, this.position.y);
   }
 }
+class ClickableObject {
+  constructor({ x, y, image, hiImage, original }) {
+    this.position = {
+      x,
+      y,
+    };
+    this.image = image;
+    this.hiImage = hiImage;
+    this.original = original;
+    this.width = image.width;
+    this.height = image.height;
+  }
+  draw() {
+    c.drawImage(this.image, this.position.x, this.position.y);
+  }
+}
 function createImage(imageSrc) {
   const image = new Image();
   image.src = imageSrc;
@@ -76,13 +106,19 @@ function createImage(imageSrc) {
 let platformImage = createImage(platform);
 let player = new Player();
 let platforms = [];
-
+let clickableObjects1 = [];
+let clickableObjects2 = [];
+let clickableObjects3 = [];
+let clickableObjects4 = [];
 let genericObjects = [];
 const keys = {
   right: {
     pressed: false,
   },
   left: {
+    pressed: false,
+  },
+  enter: {
     pressed: false,
   },
 };
@@ -94,45 +130,88 @@ function init() {
   player = new Player();
   platforms = [
     new Platform({
-      x: platformImage.width * 4 + 585,
-      y: 275,
+      x: platformImage.width * 4 + 573,
+      y: 295,
       image: createImage(SmallTallPlatform),
     }),
     new Platform({ x: -12, y: 510, image: platformImage }),
-    new Platform({ x: 550, y: 510, image: platformImage }),
+    new Platform({ x: 662, y: 510, image: platformImage }),
     new Platform({
       x: platformImage.width * 2 + 100,
-      y: 492,
+      y: 510,
       image: platformImage,
     }),
     new Platform({
-      x: platformImage.width * 3 + 300,
-      y: 492,
+      x: platformImage.width * 3 + 200,
+      y: 510,
       image: platformImage,
     }),
     new Platform({
       x: platformImage.width * 4 + 299,
-      y: 492,
+      y: 510,
       image: platformImage,
     }),
 
     new Platform({
-      x: platformImage.width * 5 + 620,
-      y: 492,
+      x: platformImage.width * 5 + 450,
+      y: 510,
+      image: platformImage,
+    }),
+    new Platform({
+      x: platformImage.width * 6 + 400,
+      y: 510,
       image: platformImage,
     }),
   ];
 
   genericObjects = [
-    // new GenericObject({ x: 0, y: 0, image: createImage(background) }),
-    new GenericObject({ x: 0, y: 240, image: createImage(trees) }),
+    new GenericObject({ x: -10, y: -150, image: createImage(sky) }),
+    new GenericObject({ x: 0, y: -30, image: createImage(buildings) }),
+    new GenericObject({ x: 0, y: 200, image: createImage(trees) }),
+  ];
+
+  clickableObjects1 = [
+    new ClickableObject({
+      x: 800,
+      y: 430,
+      image: createImage(phone),
+      hiImage: createImage(hiPhone),
+      original: createImage(phone),
+    }),
+  ];
+  clickableObjects2 = [
+    new ClickableObject({
+      x: 1400,
+      y: 430,
+      image: createImage(wand),
+      hiImage: createImage(hiWand),
+      original: createImage(wand),
+    }),
+  ];
+  clickableObjects3 = [
+    new ClickableObject({
+      x: 2300,
+      y: 430,
+      image: createImage(contact),
+      hiImage: createImage(hiContact),
+      original: createImage(contact),
+    }),
+  ];
+  clickableObjects4 = [
+    new ClickableObject({
+      x: 3400,
+      y: 430,
+      image: createImage(palette),
+      hiImage: createImage(hiPalette),
+      original: createImage(palette),
+    }),
   ];
 
   scrollOffset = 0;
 }
 function animate() {
   requestAnimationFrame(animate);
-  c.fillStyle = "#fbf9f4";
+  c.fillStyle = "#FFFAF0";
   c.fillRect(0, 0, canvas.width, canvas.height);
 
   genericObjects.forEach((genericObjects) => {
@@ -141,58 +220,198 @@ function animate() {
   platforms.forEach((platform) => {
     platform.draw();
   });
-
-  player.update();
-  if (keys.right.pressed && player.position.x < 400) {
-    player.velocity.x = player.speed;
-  } else if (
-    (keys.left.pressed && player.position.x > 100) ||
-    (keys.left.pressed && scrollOffset === 0 && player.position.x > 0)
-  ) {
-    player.velocity.x = -player.speed;
-  } else {
-    player.velocity.x = 0;
-
-    if (keys.right.pressed) {
-      scrollOffset += player.speed;
-      platforms.forEach((platform) => {
-        platform.position.x -= player.speed;
-      });
-      genericObjects.forEach((genericObject) => {
-        genericObject.position.x -= player.speed * 0.66;
-      });
-    } else if (keys.left.pressed && scrollOffset > 0) {
-      scrollOffset -= player.speed;
-      platforms.forEach((platform) => {
-        platform.position.x += player.speed;
-      });
-      genericObjects.forEach((genericObject) => {
-        genericObject.position.x += player.speed;
-      });
-    }
-  }
-
-  platforms.forEach((platform) => {
-    if (
-      player.position.y + player.height <= platform.position.y &&
-      player.position.y + player.height + player.velocity.y >=
-        platform.position.y &&
-      player.position.x + player.width >= platform.position.x &&
-      player.position.x + player.width <= platform.position.x + platform.width
-    ) {
-      player.velocity.y = 0;
-    }
+  clickableObjects1.forEach((clickableObject) => {
+    clickableObject.draw();
   });
+  clickableObjects2.forEach((clickableObject) => {
+    clickableObject.draw();
+  });
+  clickableObjects3.forEach((clickableObject) => {
+    clickableObject.draw();
+  });
+  clickableObjects4.forEach((clickableObject) => {
+    clickableObject.draw();
+  });
+  if (!pause) {
+    player.update();
+    if (keys.right.pressed && player.position.x < 400) {
+      player.velocity.x = player.speed;
+    } else if (
+      (keys.left.pressed && player.position.x > 100) ||
+      (keys.left.pressed && scrollOffset === 0 && player.position.x > 0)
+    ) {
+      player.velocity.x = -player.speed;
+    } else {
+      player.velocity.x = 0;
 
-  //win condition
-  if (scrollOffset > 2000) {
-    console.log("you win");
-  }
+      if (keys.right.pressed) {
+        scrollOffset += player.speed;
+        platforms.forEach((platform) => {
+          platform.position.x -= player.speed;
+        });
+        clickableObjects1.forEach((clickableObject) => {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects2.forEach((clickableObject) => {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects3.forEach((clickableObject) => {
+          clickableObject.position.x -= player.speed;
+        });
+        clickableObjects4.forEach((clickableObject) => {
+          clickableObject.position.x -= player.speed;
+        });
+        genericObjects.forEach((genericObject) => {
+          genericObject.position.x -= player.speed * 0.66;
+        });
+      } else if (keys.left.pressed && scrollOffset > 0) {
+        scrollOffset -= player.speed;
+        platforms.forEach((platform) => {
+          platform.position.x += player.speed;
+        });
+        clickableObjects1.forEach((clickableObject) => {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects2.forEach((clickableObject) => {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects3.forEach((clickableObject) => {
+          clickableObject.position.x += player.speed;
+        });
+        clickableObjects4.forEach((clickableObject) => {
+          clickableObject.position.x += player.speed;
+        });
+        genericObjects.forEach((genericObject) => {
+          genericObject.position.x += player.speed;
+        });
+      }
+    }
 
-  //lose condition
-  if (player.position.y > canvas.height) {
-    console.log("you lose");
-    init();
+    platforms.forEach((platform) => {
+      if (
+        player.position.y + player.height <= platform.position.y &&
+        player.position.y + player.height + player.velocity.y >=
+          platform.position.y &&
+        player.position.x + player.width >= platform.position.x &&
+        player.position.x + player.width <= platform.position.x + platform.width
+      ) {
+        player.velocity.y = 0;
+      }
+    });
+    clickableObjects1.forEach((clickableObject, index) => {
+      if (
+        player.position.x >= clickableObject.position.x - 100 &&
+        player.position.x <=
+          clickableObject.position.x + clickableObject.width + 100
+      ) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+
+        document.getElementById("caption1").innerHTML = "Press Enter";
+
+        phoneSelected = true;
+      } else if (
+        player.position.x >
+          clickableObject.position.x + clickableObject.width + 100 ||
+        player.position.x < clickableObject.position.x - 100
+      ) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+        if (phoneSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects2.forEach((clickableObject, index) => {
+      if (
+        player.position.x >= clickableObject.position.x - 100 &&
+        player.position.x <=
+          clickableObject.position.x + clickableObject.width + 100
+      ) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+
+        document.getElementById("caption1").innerHTML = "Press Enter";
+
+        wandSelected = true;
+      } else if (
+        player.position.x >
+          clickableObject.position.x + clickableObject.width + 100 ||
+        player.position.x < clickableObject.position.x - 100
+      ) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+        if (wandSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects3.forEach((clickableObject, index) => {
+      if (
+        player.position.x >= clickableObject.position.x - 100 &&
+        player.position.x <=
+          clickableObject.position.x + clickableObject.width + 100
+      ) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+
+        document.getElementById("caption1").innerHTML = "Press Enter";
+
+        contactSelected = true;
+      } else if (
+        player.position.x >
+          clickableObject.position.x + clickableObject.width + 100 ||
+        player.position.x < clickableObject.position.x - 100
+      ) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+        if (contactSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    clickableObjects4.forEach((clickableObject, index) => {
+      if (
+        player.position.x >= clickableObject.position.x - 100 &&
+        player.position.x <=
+          clickableObject.position.x + clickableObject.width + 100
+      ) {
+        document.getElementById("caption1").style.display = "flex";
+        console.log("allo");
+        clickableObject.image = clickableObject.hiImage;
+        clickableObject.position.y = 410;
+
+        document.getElementById("caption1").innerHTML = "Press Enter";
+
+        paletteSelected = true;
+      } else if (
+        player.position.x >
+          clickableObject.position.x + clickableObject.width + 100 ||
+        player.position.x < clickableObject.position.x - 100
+      ) {
+        clickableObject.image = clickableObject.original;
+        clickableObject.position.y = 430;
+        if (paletteSelected) {
+          document.getElementById("caption1").style.display = "none";
+        }
+      }
+    });
+    //win condition
+    if (scrollOffset > 2000) {
+      console.log("you win");
+    }
+
+    //lose condition
+    if (player.position.y > canvas.height) {
+      console.log("you lose");
+      init();
+    }
   }
 }
 init();
@@ -213,6 +432,10 @@ window.addEventListener("keydown", ({ keyCode }) => {
     case 38:
       player.velocity.y -= 25;
       break;
+    case 13:
+      keys.enter.pressed = true;
+      console.log("space");
+      break;
   }
 });
 
@@ -228,5 +451,29 @@ window.addEventListener("keyup", ({ keyCode }) => {
       break;
     case 38:
       break;
+    case 13:
+      keys.enter.pressed = false;
+      break;
   }
 });
+
+//UI
+
+function getUserName() {
+  var nameField = document.getElementById("nameField").value;
+  var result = document.getElementById("username");
+
+  if (nameField.length > 0) {
+    result.textContent = nameField;
+    document.querySelector("#right").style.display = "flex";
+    document.querySelector("#bottom").style.display = "flex";
+    document.querySelector("#small-overlay").style.display = "none";
+    document.querySelector("#overlay").style.backgroundColor = "transparent";
+    pause = false;
+  } else {
+    document.getElementById("nameField").style.borderBottom =
+      "4px solid #E66363";
+  }
+}
+var subButton = document.getElementById("cr-btn");
+subButton.addEventListener("click", getUserName, false);
