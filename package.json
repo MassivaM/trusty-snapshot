@@ -24,5 +24,10 @@
     "style-loader": "^2.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@c2pa/adobe-sdk": "^0.16.2",
+    "@c2pa/adobe-wc": "^0.12.9",
+    "three": "^0.158.0"
   }
 }

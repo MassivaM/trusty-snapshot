@@ -1,3 +1,6 @@
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import buildings from "../../assets/buildings.png";
 import contact from "../../assets/contact.png";
 import creddy from "../../assets/creddy.png";
@@ -14,6 +17,11 @@ import trees from "../../assets/trees2.png";
 import wand from "../../assets/wand.png";
 import "../styles.css";
 import intro from "./intro.js";
+import picture from "./picture.js";
+let getImageData = false;
+let imgData;
+let base64;
+let pictureShown = false;
 const canvas = document.querySelector("canvas");
 const c = canvas.getContext("2d");
 let pause = true;
@@ -31,7 +39,7 @@ class Player {
       x: 0,
       y: 0,
     };
-    this.speed = 5;
+    this.speed = 3;
     this.width = 63;
     this.height = 66;
     this.image = createImage(creddy);
@@ -121,6 +129,9 @@ const keys = {
   enter: {
     pressed: false,
   },
+  space: {
+    pressed: false,
+  },
 };
 
 let scrollOffset = 0;
@@ -181,7 +192,7 @@ function init() {
   ];
   clickableObjects2 = [
     new ClickableObject({
-      x: 1400,
+      x: 1510,
       y: 430,
       image: createImage(wand),
       hiImage: createImage(hiWand),
@@ -305,11 +316,33 @@ function animate() {
           clickableObject.position.x + clickableObject.width + 100
       ) {
         document.getElementById("caption1").style.display = "flex";
-        console.log("allo");
         clickableObject.image = clickableObject.hiImage;
         clickableObject.position.y = 410;
+        if (!base64) {
+          document.getElementById("caption1").innerHTML = "Press Enter";
+        }
 
-        document.getElementById("caption1").innerHTML = "Press Enter";
+        if (keys.enter.pressed) {
+          document.querySelector("#renderer").style.display = "block";
+          document.getElementById("3js-overlay").style.display = "block";
+        }
+        if (keys.space.pressed && !base64) {
+          capture();
+          setTimeout(() => {
+            console.log("Delayed for 1 second.");
+          }, 1000);
+          if (base64 != undefined) {
+            document.querySelector("#renderer").style.display = "none";
+            document.getElementById("3js-overlay").style.display = "none";
+            document.getElementById("caption1").innerHTML =
+              "Beautiful! Since the phone is C2PA-enabled your information was  stored in the image on capture ";
+            console.log("base64", base64);
+            document.querySelector("#picture").src = base64;
+            document.querySelector("#picture-underlay").style.visibility =
+              "visible";
+            pictureShown = true;
+          }
+        }
 
         phoneSelected = true;
       } else if (
@@ -321,6 +354,8 @@ function animate() {
         clickableObject.position.y = 430;
         if (phoneSelected) {
           document.getElementById("caption1").style.display = "none";
+          document.querySelector("#picture-underlay").style.visibility =
+            "hidden";
         }
       }
     });
@@ -434,6 +469,10 @@ window.addEventListener("keydown", ({ keyCode }) => {
       break;
     case 13:
       keys.enter.pressed = true;
+      console.log("enter");
+      break;
+    case 32:
+      keys.space.pressed = true;
       console.log("space");
       break;
   }
@@ -477,3 +516,89 @@ function getUserName() {
 }
 var subButton = document.getElementById("cr-btn");
 subButton.addEventListener("click", getUserName, false);
+
+//THREEJS
+
+const scene = new THREE.Scene();
+console.log(scene);
+
+// Camera Setup
+const fov = 35;
+const aspect = window.innerWidth / window.innerHeight;
+const near = 0.1;
+const far = 1000;
+
+const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+camera.position.set(0, 0, 25);
+scene.add(camera);
+
+// Render Setup
+const renderer = new THREE.WebGLRenderer({});
+renderer.domElement.setAttribute("id", "renderer");
+document.querySelector("#container").appendChild(renderer.domElement);
+
+renderer.setSize(1024, 576);
+renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1);
+renderer.autoClear = false;
+renderer.setClearColor = (0x000000, 0.0);
+console.log(renderer);
+
+// Adding orbit controls
+let controls = new OrbitControls(camera, renderer.domElement);
+
+controls.minDistance = 10;
+controls.maxDistance = 40;
+
+// loader for loading texture
+let loader = new THREE.TextureLoader();
+
+// array for holding all texutre
+let textureArray = [];
+
+// all texture
+let frontTexture = loader.load("/sky/skybox-4.jpg");
+let backTexture = loader.load("/sky/skybox-2.jpg");
+let topTexture = loader.load("/sky/skybox-5.jpg");
+let bottomTexture = loader.load("/sky/skybox-6.jpg");
+let rightTexture = loader.load("/sky/skybox-3.jpg");
+let leftTexture = loader.load("/sky/skybox-1.jpg");
+
+textureArray.push(new THREE.MeshBasicMaterial({ map: frontTexture }));
+textureArray.push(new THREE.MeshBasicMaterial({ map: backTexture }));
+textureArray.push(new THREE.MeshBasicMaterial({ map: topTexture }));
+textureArray.push(new THREE.MeshBasicMaterial({ map: bottomTexture }));
+textureArray.push(new THREE.MeshBasicMaterial({ map: rightTexture }));
+textureArray.push(new THREE.MeshBasicMaterial({ map: leftTexture }));
+
+for (let i = 0; i < textureArray.length; i++) {
+  textureArray[i].side = THREE.BackSide;
+}
+
+// making cube
+const cubeGeometry = new THREE.BoxGeometry(100, 100, 100);
+const skyBox = new THREE.Mesh(cubeGeometry, textureArray);
+scene.add(skyBox);
+
+// render function to render the scene
+const render = () => {
+  renderer.render(scene, camera);
+};
+const capture = () => {
+  requestAnimationFrame(animateThree);
+  render();
+  const cav = document.querySelector("#renderer");
+  base64 = cav.toDataURL("img/png");
+  console.log("inside capture", base64);
+};
+// Recursion function for animation
+const animateThree = () => {
+  requestAnimationFrame(animateThree);
+  render();
+  // if (getImageData == true) {
+  //   capture();
+  //   getImageData = false;
+  // }
+  // stats.update();
+};
+animateThree();
+document.querySelector("#renderer").style.display = "none";

@@ -14,6 +14,7 @@ body {
 
     /* position: relative; */
     /* z-index: 1; */
+    /* display: none; */
 
   }
 
@@ -90,7 +91,7 @@ p{
   position: relative;
   height:576px;
   width:1024px;
-  display: block
+  display: block;
 }
 #container canvas, #overlay {
   position: absolute;
@@ -98,6 +99,16 @@ p{
    width:1024px;
    z-index:9999;
    background-color: rgba(40, 40, 40, 0.50);
+  
+
+}
+#container #renderer, #overlay {
+  position: absolute;
+  height:576px;
+   width:1024px;
+   z-index:10000;
+   background-color: rgba(40, 40, 40, 0.50);
+  
 
 }
 
@@ -189,8 +200,9 @@ button:focus {
   display: none;
   height:495px;
   width:1024px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 2rem;
 }
 .caption{
@@ -200,3 +212,43 @@ button:focus {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+#renderer{
+  display:none;
+}
+
+.threejs-overlay {
+  position: absolute;
+  display: none;
+  z-index: 100000;
+  left: 28%;
+  top: 88%;
+  }
+
+  #picture{
+    height: 194px;
+width: 306px;
+
+  }
+  .caption1{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .picture-underlay{
+    margin-top: 4rem;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 234px;
+    width: 346px;
+    background-color: white;
+    border: 4px solid #282828;
+    width: ;
+  }
